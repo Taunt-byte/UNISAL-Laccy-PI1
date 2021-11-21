@@ -1,2 +1,3 @@
-# Projeto-Integrador-I
- Primeiro PI desenvolvido para o curso de engenharia da computação pela UNISAL
+# Aplicação mobile para avaliação de instituições de ensino.
+ Este projeto será desenvolvido através de um protótipo de aplicação mobile para avaliação de instituições de ensino.
+
