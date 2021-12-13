@@ -41,7 +41,7 @@ Em desenvolvimento.
 
 Para fazer a instalação desse repositorio em sua maquina basta escrever em seu terminal:
 
-  <code>git clone https://github.com/Taunt-byte/Projeto-Integrador-I.git</code>
+    git clone https://github.com/Taunt-byte/Projeto-Integrador-I.git
 
 
 ## Como usar
