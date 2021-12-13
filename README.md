@@ -72,7 +72,7 @@ As seguintes linguagens de programação foram usadas no projeto:
 
 As seguintes bibliotecas foram usadas no projeto:
     
-    Basicamente qualquer outra coisa que não faça parta da linguagem de programação
+<i>Basicamente qualquer outra coisa que não faça parta da linguagem de programação</i>
 
 <table>
     <tr>
