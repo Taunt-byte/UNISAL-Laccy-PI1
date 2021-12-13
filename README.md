@@ -35,17 +35,18 @@ Tabela de conteúdos
 
 ## Tabela de conteudo
 
+Em desenvolvimento.
 
 ## Instalação
 
 Para fazer a instalação desse repositorio em sua maquina basta escrever em seu terminal:
 
-  <code>git clone </code>
+  <code>git clone https://github.com/Taunt-byte/Projeto-Integrador-I.git</code>
 
 
 ## Como usar
 
-
+Em desenvolvimento.
 
 ## Pre Requisitos
 
@@ -71,7 +72,7 @@ As seguintes linguagens de programação foram usadas no projeto:
 
 As seguintes bibliotecas foram usadas no projeto:
     
-    (Basicamente qualquer outra coisa que não faça parta da linguagem de programação)
+    Basicamente qualquer outra coisa que não faça parta da linguagem de programação
 
 <table>
     <tr>
