@@ -1,51 +1,82 @@
-# Aplicação mobile para avaliação de instituições de ensino.
+# 📱 Aplicação Mobile para Avaliação de Instituições de Ensino
 
-Este projeto consiste no desenvolvimento de um protótipo de aplicação mobile para avaliação de instituições de ensino.
+Este projeto consiste no desenvolvimento de um protótipo de aplicação mobile voltado para a avaliação de instituições de ensino, visando otimizar o processo de feedback entre alunos, professores, avaliadores e a própria instituição.
 
-## Tabela de conteúdos
+## 📌 Tabela de Conteúdos
 
-- [Sobre](#sobre)
-- [Objetivos](#objetivos)
-- [Instalação](#instalação)
-- [Como usar](#como-usar)
-- [Pré-requisitos](#pré-requisitos)
-- [Tecnologias](#tecnologias)
-- [Em desenvolvimento](#em-desenvolvimento)
+* [Sobre](#sobre)
+* [Objetivos](#objetivos)
+* [Instalação](#instalação)
+* [Como Usar](#como-usar)
+* [Pré-requisitos](#pré-requisitos)
+* [Tecnologias](#tecnologias)
+* [Em Desenvolvimento](#em-desenvolvimento)
 
-## Sobre
+---
 
-A aplicação mobile para avaliação de instituições de ensino é um projeto em desenvolvimento que visa fornecer uma ferramenta para agilizar a avaliação e feedback dos alunos, além de promover a colaboração entre professores, avaliadores e a própria instituição. Com essa aplicação, é possível avaliar não apenas os professores, mas também os departamentos e a instituição como um todo, contribuindo para a melhoria do ensino e do desempenho geral.
+## 📖 Sobre
 
-## Objetivos
+A aplicação mobile para avaliação de instituições de ensino é um projeto em desenvolvimento que busca oferecer uma ferramenta prática e eficiente para coleta de avaliações e feedback. Ela permite que alunos avaliem professores, departamentos e a instituição como um todo, contribuindo para a melhoria contínua do ensino e da gestão educacional.
 
-- Agilizar o tempo de feedback dos alunos, permitindo uma comunicação mais rápida e eficiente.
-- Contribuir para a economia de recursos da instituição, através de processos automatizados de avaliação.
-- Proporcionar um ambiente de avaliação abrangente, incluindo não apenas os professores, mas também os departamentos e a instituição em si.
-- Implementar um sistema de avaliação de desempenho que promova a colaboração entre professor e avaliador, incentivando o crescimento pessoal, a eficácia do ensino e a melhoria do trabalho em geral.
-- Documentar o desempenho dos professores com base em comentários e critérios de avaliação presentes no aplicativo.
+Além disso, o sistema promove a colaboração entre professores e avaliadores, facilitando o acompanhamento do desempenho docente e auxiliar no aperfeiçoamento das práticas pedagógicas.
 
-## Instalação
+---
+
+## 🎯 Objetivos
+
+* Agilizar o tempo de feedback dos alunos, permitindo uma comunicação mais rápida e eficaz.
+* Reduzir o uso de recursos da instituição por meio da automatização dos processos de avaliação.
+* Oferecer um ambiente completo de avaliação, abrangendo professores, departamentos e a própria instituição.
+* Implementar um sistema de desempenho que incentive a colaboração entre professores e avaliadores, contribuindo para o crescimento pessoal e profissional.
+* Documentar o desempenho docente com base em comentários e critérios definidos no aplicativo.
+
+---
+
+## 🛠 Instalação
 
 Para clonar este repositório em sua máquina, execute o seguinte comando no terminal:
 
-```
+```bash
 git clone https://github.com/Taunt-byte/Projeto-Integrador-I.git
 ```
 
-## Como usar
+---
 
-(em desenvolvimento)
+## 🚀 Como Usar
 
-## Pré-requisitos
+*(Em desenvolvimento)*
 
-Antes de usar este projeto, certifique-se de atender aos seguintes requisitos:
+---
 
-1. Ter o Git corretamente instalado em sua máquina.
-2. Ter um bom editor de texto para edição e execução do código (recomenda-se o uso do Visual Studio Code).
+## ✅ Pré-requisitos
 
-## Tecnologias
+Antes de utilizar o projeto, certifique-se de que possui:
 
-As seguintes tecnologias foram utilizadas neste projeto:
+1. **Git** instalado corretamente em sua máquina.
+2. Um editor de código adequado (recomendado: **Visual Studio Code**).
 
-- Linguagem de programação: Dart
-- Framework: Flutter
+---
+
+## 🧩 Tecnologias
+
+As tecnologias utilizadas no desenvolvimento deste projeto incluem:
+
+* **React Native**
+
+---
+
+## 🔧 Em Desenvolvimento
+
+Novos recursos, telas e funcionalidades estão sendo implementados continuamente.
+
+---
+
+Se quiser, posso adicionar:
+
+✔️ Capturas de tela
+✔️ Estrutura de pastas
+✔️ Como rodar o projeto no Android/iOS
+✔️ Badge do GitHub
+✔️ Licença
+
+Só pedir!
