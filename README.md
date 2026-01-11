@@ -1,4 +1,4 @@
-# 📱 Aplicação Mobile para Avaliação de Instituições de Ensino
+# 📱 Laccy - Aplicação Mobile para Avaliação de Instituições de Ensino
 
 Este projeto consiste no desenvolvimento de um protótipo de aplicação mobile voltado para a avaliação de instituições de ensino, visando otimizar o processo de feedback entre alunos, professores, avaliadores e a própria instituição.
 
@@ -16,7 +16,9 @@ Este projeto consiste no desenvolvimento de um protótipo de aplicação mobile 
 
 ## 📖 Sobre
 
-A aplicação mobile para avaliação de instituições de ensino é um projeto em desenvolvimento que busca oferecer uma ferramenta prática e eficiente para coleta de avaliações e feedback. Ela permite que alunos avaliem professores, departamentos e a instituição como um todo, contribuindo para a melhoria contínua do ensino e da gestão educacional.
+A aplicação mobile para avaliação de instituições de ensino é um projeto em desenvolvimento que busca oferecer uma ferramenta prática e eficiente para coleta de avaliações e feedback. 
+
+Ela permite que alunos avaliem professores, departamentos e a instituição como um todo, contribuindo para a melhoria contínua do ensino e da gestão educacional.
 
 Além disso, o sistema promove a colaboração entre professores e avaliadores, facilitando o acompanhamento do desempenho docente e auxiliar no aperfeiçoamento das práticas pedagógicas.
 
@@ -37,7 +39,7 @@ Além disso, o sistema promove a colaboração entre professores e avaliadores, 
 Para clonar este repositório em sua máquina, execute o seguinte comando no terminal:
 
 ```bash
-git clone https://github.com/Taunt-byte/Projeto-Integrador-I.git
+git clone https://github.com/Taunt-byte/UNISAL-Laccy-PI1.git
 ```
 
 ---
@@ -70,13 +72,3 @@ As tecnologias utilizadas no desenvolvimento deste projeto incluem:
 Novos recursos, telas e funcionalidades estão sendo implementados continuamente.
 
 ---
-
-Se quiser, posso adicionar:
-
-✔️ Capturas de tela
-✔️ Estrutura de pastas
-✔️ Como rodar o projeto no Android/iOS
-✔️ Badge do GitHub
-✔️ Licença
-
-Só pedir!
