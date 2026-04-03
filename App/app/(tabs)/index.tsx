@@ -1,98 +1,186 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
-
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+import { StyleSheet, Text, View, ScrollView, TextInput, TouchableOpacity } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+    <ScrollView style={styles.container}>
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      {/* Header */}
+      <View style={styles.header}>
+        <Text style={styles.title}>Avaliação Acadêmica</Text>
+        <Text style={styles.subtitle}>
+          Avalie professores e ajude a melhorar o ensino
+        </Text>
+      </View>
+
+      {/* Barra de busca */}
+      <View style={styles.searchBox}>
+        <Ionicons name="search" size={20} color="#64748B" />
+        <TextInput
+          placeholder="Buscar professor..."
+          placeholderTextColor="#64748B"
+          style={styles.searchInput}
+        />
+      </View>
+
+      {/* Cards principais */}
+      <View style={styles.menu}>
+
+        <TouchableOpacity style={styles.card}>
+          <Ionicons name="person-outline" size={28} color="#2563EB" />
+          <Text style={styles.cardTitle}>Avaliar Professores</Text>
+          <Text style={styles.cardText}>
+            Avalie didática, conteúdo e metodologia
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card}>
+          <Ionicons name="school-outline" size={28} color="#2563EB" />
+          <Text style={styles.cardTitle}>Departamentos</Text>
+          <Text style={styles.cardText}>
+            Avalie organização e estrutura acadêmica
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card}>
+          <Ionicons name="business-outline" size={28} color="#2563EB" />
+          <Text style={styles.cardTitle}>Instituição</Text>
+          <Text style={styles.cardText}>
+            Compartilhe sua experiência geral
+          </Text>
+        </TouchableOpacity>
+
+      </View>
+
+      {/* Lista exemplo de professores */}
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Professores em destaque</Text>
+
+        <View style={styles.professorCard}>
+          <View>
+            <Text style={styles.professorName}>Prof. Carlos Silva</Text>
+            <Text style={styles.professorDept}>Engenharia</Text>
+          </View>
+
+          <View style={styles.rating}>
+            <Ionicons name="star" size={18} color="#F59E0B" />
+            <Text style={styles.ratingText}>4.8</Text>
+          </View>
+        </View>
+
+        <View style={styles.professorCard}>
+          <View>
+            <Text style={styles.professorName}>Prof. Ana Souza</Text>
+            <Text style={styles.professorDept}>Computação</Text>
+          </View>
+
+          <View style={styles.rating}>
+            <Ionicons name="star" size={18} color="#F59E0B" />
+            <Text style={styles.ratingText}>4.6</Text>
+          </View>
+        </View>
+
+      </View>
+
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
+
+  container: {
+    flex: 1,
+    backgroundColor: "#0F172A",
+    padding: 20,
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+
+  header: {
+    marginBottom: 25,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+
+  title: {
+    fontSize: 28,
+    color: "white",
+    fontWeight: "bold",
   },
+
+  subtitle: {
+    color: "#94A3B8",
+    marginTop: 5,
+  },
+
+  searchBox: {
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 12,
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 25,
+  },
+
+  searchInput: {
+    marginLeft: 10,
+    flex: 1,
+  },
+
+  menu: {
+    gap: 15,
+  },
+
+  card: {
+    backgroundColor: "white",
+    borderRadius: 12,
+    padding: 20,
+  },
+
+  cardTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginTop: 8,
+  },
+
+  cardText: {
+    color: "#64748B",
+    marginTop: 3,
+  },
+
+  section: {
+    marginTop: 30,
+  },
+
+  sectionTitle: {
+    fontSize: 20,
+    color: "white",
+    fontWeight: "bold",
+    marginBottom: 15,
+  },
+
+  professorCard: {
+    backgroundColor: "white",
+    padding: 15,
+    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 10,
+  },
+
+  professorName: {
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+
+  professorDept: {
+    color: "#64748B",
+  },
+
+  rating: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  ratingText: {
+    marginLeft: 5,
+    fontWeight: "bold",
+  },
+
 });
