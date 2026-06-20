@@ -1,4 +1,4 @@
-# 📱 Laccy - Aplicação Mobile para Avaliação de Instituições de Ensino
+# 📱 EduPulse - Aplicação Mobile para Avaliação de Instituições de Ensino
 
 Este projeto consiste no desenvolvimento de um protótipo de aplicação mobile voltado para a avaliação de instituições de ensino, visando otimizar o processo de feedback entre alunos, professores, avaliadores e a própria instituição.
 
